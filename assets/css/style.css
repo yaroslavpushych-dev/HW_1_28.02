@@ -12,7 +12,7 @@ html {
 body {
     height: 100vh;
     padding: 0px 70px;
-    background: black;
+    background: linear-gradient(135deg, cornflowerblue, blue, purple);
 }
 
 header {
