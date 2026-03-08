@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    user-select: none;
+    /* user-select: none; */
 }
 
 html {
@@ -129,4 +129,27 @@ footer>address {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+table, tr, td, th {
+    border: 1px solid white;
+    color: white;
+}
+
+#tableSection {
+    width: 100%;
+}
+
+#tableSection table {
+    width: 100%;
+}
+
+#tableSection h2 {
+    color: white;
+    padding-bottom: 8px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
 }
