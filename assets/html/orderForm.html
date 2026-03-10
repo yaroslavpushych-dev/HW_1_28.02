@@ -126,6 +126,138 @@
             <input type="reset" value="Cancel">
             <input type="submit" value="Ok">
         </div>
+        <fieldset>
+            <legend>Personal info</legend>
+            <div>
+                <div>
+                    <label for="firstName">First name</label>
+                </div>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div>
+                <div>
+                    <label for="lastName">Last name</label>
+                </div>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div>
+                <div>
+                    <label for="birthday">Birthday</label>
+                </div>
+                <input type="datetime-local" id="birthday" name="birthday">
+            </div>
+
+            <div>Gender</div>
+            <div>
+                <label for="maleRad">Male</label>
+                <input type="radio" name="gender" id="maleRad" checked>
+                <label for="femaleRad">Female</label>
+                <input type="radio" name="gender" id="femaleRad">
+            </div>
+
+            <div>
+                <div>
+                    <label for="experience">Drive experience</label>
+                </div>
+                <select name="experience" id="experience">
+                    <option value="expDisabled" disabled selected>---</option>
+                    <option value="zeroOne">0 - 1 year</option>
+                    <option value="oneThree">1 - 3 years</option>
+                    <option value="threeSeven">3 - 7 years</option>
+                    <option value="sevenTen">7 - 10+ year </option>
+                </select>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Contacts</legend>
+            <div>
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <div>
+                    <label for="phoneNumber">Phone</label>
+                </div>
+                <input type="tel" id="phoneNumber" required>
+            </div>
+
+            <div>
+                <div>
+                    <label for="addressTextarea">Address</label>
+                </div>
+                <textarea id="addressTextarea"></textarea>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Car info</legend>
+            <div>
+                <div>
+                    <label for="brand">Brand</label>
+                </div>
+                <select name="brand" id="brand">
+                    <option value="brdDisabled" disabled selected>---</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="BMW">BMW</option>
+                </select>
+            </div>
+
+            <div>
+                <div>
+                    <label for="model">Model</label>
+                </div>
+                <select name="model" id="model">
+                    <option value="mdlDisabled" disabled selected>---</option>
+                    <option value="Mercedes-AMG G63">Mercedes-AMG G63</option>
+                    <option value="Mercedes-Benz EQS 580">Mercedes-Benz EQS 580</option>
+                    <option value="Ferrari F8 Tributo">Ferrari F8 Tributo</option>
+                    <option value="Ferrari SF90 Stradale">Ferrari SF90 Stradale</option>
+                    <option value="BMW M3 (G80)">BMW M3 (G80)</option>
+                    <option value="BMW iX M60">BMW iX M60</option>
+                </select>
+            </div>
+
+            <div>
+                <div>
+                    <label for="usedChb">Used</label>
+                </div>
+                <input type="checkbox" id="usedChb" name="usedChb">
+            </div>
+
+            <div>Color:</div>
+            <div>
+
+                <label for="redColor">Red</label>
+                <input type="radio" name="color" id="redColor" checked>
+                <label for="blackColor">Black</label>
+                <input type="radio" name="color" id="blackColor">
+                <label for="blueColor">Blue</label>
+                <input type="radio" name="color" id="blueColor">
+                <label for="whiteColor">White</label>
+                <input type="radio" name="color" id="whiteColor">
+                <label for="grayColor">Gray</label>
+                <input type="radio" name="color" id="grayColor">
+            </div>
+
+            <div>
+                <div>
+                    <label for="priceRange">Price</label>
+                </div>
+                <input type="range" name="priceRange" id="priceRange" min="40000" max="450000" value="40000"
+                    oninput="out.value = priceRange.value">
+                <output id="out">40000</output>
+            </div>
+        </fieldset>
+        <input type="reset" value="Cancel">
+        <input type="submit" value="Ok">
     </form>
 </body>
 
