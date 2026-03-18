@@ -102,7 +102,7 @@ main>article>section {
     border-bottom: 1px solid lightgray;
 }
 
-.articleLogo {
+.article-logo {
     width: 50px;
     height: 50px;
 }
@@ -136,15 +136,15 @@ table, tr, td, th {
     color: white;
 }
 
-#tableSection {
+#table-section {
     width: 100%;
 }
 
-#tableSection table {
+#table-section table {
     width: 100%;
 }
 
-#tableSection h2 {
+#table-section h2 {
     color: white;
     padding-bottom: 8px;
 }
