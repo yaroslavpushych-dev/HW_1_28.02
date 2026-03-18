@@ -61,7 +61,7 @@ input[type="reset"] {
     font-weight: bold;
 }
 
-.btnWrapper {
+.btn-wrapper {
     display: flex;
     gap: 30px;
 }
@@ -77,4 +77,19 @@ legend {
 fieldset>div input[type="checkbox"],
 fieldset>div input[type="radio"] {
     width: auto;
+}
+
+datalist {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+fieldset>div>div>input {
+    width: 100%;
+}
+
+fieldset>div>div{
+    width: 80%;
 }

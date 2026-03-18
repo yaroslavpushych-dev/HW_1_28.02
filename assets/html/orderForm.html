@@ -15,13 +15,13 @@
             <fieldset>
                 <legend>Personal info</legend>
                 <div>
-                    <label for="firstName">First name</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" name="first-name" required>
                 </div>
 
                 <div>
-                    <label for="lastName">Last name</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="last-name" required>
                 </div>
 
                 <div>
@@ -31,10 +31,10 @@
 
                 <label>Gender</label>
                 <div>
-                    <label for="maleRad">Male</label>
-                    <input type="radio" name="gender" id="maleRad" checked>
-                    <label for="femaleRad">Female</label>
-                    <input type="radio" name="gender" id="femaleRad">
+                    <label for="male-rad">Male</label>
+                    <input type="radio" name="gender" id="male-rad" checked>
+                    <label for="female-rad">Female</label>
+                    <input type="radio" name="gender" id="female-rad">
                 </div>
 
                 <div>
@@ -57,13 +57,13 @@
                     <input type="email" id="email" required>
                 </div>
                 <div>
-                    <label for="phoneNumber">Phone</label>
-                    <input type="tel" id="phoneNumber" required>
+                    <label for="phone-number">Phone</label>
+                    <input type="tel" id="phone-number" required>
                 </div>
 
                 <div>
-                    <label for="addressTextarea">Address</label>
-                    <textarea id="addressTextarea"></textarea>
+                    <label for="address-textarea">Address</label>
+                    <textarea id="address-textarea"></textarea>
                 </div>
             </fieldset>
 
@@ -94,35 +94,50 @@
                 </div>
 
                 <div>
-                    <label for="usedChb">Used</label>
-                    <input type="checkbox" id="usedChb" name="usedChb">
+                    <label for="used-chb">Used</label>
+                    <input type="checkbox" id="used-chb" name="used-chb">
                 </div>
 
                 <label>Color</label>
                 <div>
-
-                    <label for="redColor">Red</label>
-                    <input type="radio" name="color" id="redColor" checked>
-                    <label for="blackColor">Black</label>
-                    <input type="radio" name="color" id="blackColor">
-                    <label for="blueColor">Blue</label>
-                    <input type="radio" name="color" id="blueColor">
-                    <label for="whiteColor">White</label>
-                    <input type="radio" name="color" id="whiteColor">
-                    <label for="grayColor">Gray</label>
-                    <input type="radio" name="color" id="grayColor">
+                    <label for="red-color">Red</label>
+                    <input type="radio" name="color" id="red-color" checked>
+                    <label for="black-color">Black</label>
+                    <input type="radio" name="color" id="black-color">
+                    <label for="blue-color">Blue</label>
+                    <input type="radio" name="color" id="blue-color">
+                    <label for="white-color">White</label>
+                    <input type="radio" name="color" id="white-color">
+                    <label for="gray-color">Gray</label>
+                    <input type="radio" name="color" id="gray-color">
                 </div>
 
                 <div>
-                    <label for="priceRange">Price</label>
-                    <input type="range" name="priceRange" step="5000" id="priceRange" min="40000" max="450000"
-                        value="40000" oninput="out.value = priceRange.value">
-                    <output id="out">40000</output>
+                    <label for="price-range">Price k$</label>
+                    <div>
+                        <input type="range" name="price-range" step="10" id="price-range" list="price-list" min="10"
+                            max="100">
+                        <datalist id="price-list">
+                            <option value="10" label="10"></option>
+                            <option value="20" label="20"></option>
+                            <option value="30" label="30"></option>
+                            <option value="40" label="40"></option>
+                            <option value="50" label="50"></option>
+                            <option value="60" label="60"></option>
+                            <option value="70" label="70"></option>
+                            <option value="80" label="80"></option>
+                            <option value="90" label="90"></option>
+                            <option value="100" label="100"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <div>
+
                 </div>
             </fieldset>
         </div>
 
-        <div class="btnWrapper">
+        <div class="btn-wrapper">
             <input type="reset" value="Cancel">
             <input type="submit" value="Ok">
         </div>
